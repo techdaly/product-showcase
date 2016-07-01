@@ -1,4 +1,4 @@
-/*Document Styling*/
+/*////////////////Document Styling/////////////////////*/
 html body {
   margin: 0px;
 }
@@ -23,7 +23,7 @@ body {
   background-color: #98A5AA;
 }
 
-/*Product Card Styling*/
+/*//////////////////Product Card Styling///////////////*/
 .product-card {
   width: 640px;
   background-color: #E9F2EF;
@@ -32,6 +32,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 .product-card::after{
@@ -172,5 +173,37 @@ td {
 .add-to-cart:hover{
   color: white;
   background-color: steelblue;
+  cursor: pointer;
+}
+
+/*//////////////////More Products Styling///////////////*/
+
+.more-products-card {
+  width: 640px;
+  background-color: #E9F2EF;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 6px -6px #777;
+  padding: 20px;
+}
+
+.more-products-card::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mp-img {
+  float: left;
+  padding: 10px;
+  height: 140px;
+  width: 200px;
+}
+
+.mp-img:hover {
+  opacity: .75;
   cursor: pointer;
 }
